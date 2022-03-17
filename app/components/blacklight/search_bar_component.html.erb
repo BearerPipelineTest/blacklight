@@ -31,7 +31,7 @@
 
       <%= f.button class: 'btn btn-primary search-btn', id: "#{@prefix}search" do %>
         <span class="submit-search-text"><%= scoped_t('submit') %></span>
-        <%= blacklight_icon :search, aria_hidden: true %>
+        <%= render Blacklight::Icons::SearchComponent.new %>
       <% end %>
     </span>
   </div>
